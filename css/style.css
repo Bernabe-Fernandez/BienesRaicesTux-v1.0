@@ -155,6 +155,27 @@ a {
   display: none;
 }
 
+/* css para ocultar tanto los lebal y los input  Inicio del las ids luis A  */
+#RFCvent {
+  display: none;
+}
+#celvent {
+  display: none;
+}
+#direccionvent {
+  display: none;
+}
+#RFClabel {
+  display: none;
+}
+#celebal {
+  display: none;
+}
+#direccionlebal {
+  display: none;
+}
+/* css para ocultar los label y los input inicio de las ids Luis A */
+
 /*** Estilos de la pagina ****/
 
 /**** header *****/
