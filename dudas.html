@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- mandamos a llamar un API de google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <!-- mandamos a llamar la hoja de estilos y la hoja de normalize -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>BienesRaicesTux</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="head">
+            <div class="head-title">
+                <h1>Bienes<span>Raices</span>Tux</h1>
+            </div>
+            <div class="head-text">
+                <p></p>
+                Venta de Casas y Departamentos en Tuxtla Gutierrez, Chiapas.
+                </p>
+            </div>
+            <!-- boton -->
+            <a href="contacto.html" class="boton">Contactame</a>
+        </div>
+    </header>
+    <!-- barra menu -->
+    <section class="container container-menu menu">
+        <div class="logo">
+            <a href="index.html">BienesRaicesTux</a>
+        </div>
+        <!-- botones para activar o desactivar el menu -->
+        <div class="botones ocultar">
+            <!-- estrella para favoritos -->
+            <a href="favorito.html">
+                <svg class="favorito" xmlns=" http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                </svg>
+            </a>
+            <buttton class="menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
+                </svg>
+                <svg class="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z" />
+                </svg>
+            </buttton>
+        </div>
+        <!-- menu de contenido -->
+        <nav class="bar-nav">
+            <ul class="bar-menu" id="bar-menu">
+                <li class="menu--item">
+                    <a class="home ocultar menu--link" href="index.html">Home</a>
+                    <a class="menu--link" href="favoritos.html">
+                        <svg class="none favorito" xmlns=" http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu--item contenedor-menu">
+                    <a class="menu--link submenu-btn" href="#">Cuenta
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="ocultar icon icon-tabler icon-tabler-chevron-down" width="30" height="30"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <polyline points="6 9 12 15 18 9" />
+                        </svg>
+                    </a>
+                    <!-- usamos un submenu para las partes desplegables -->
+                    <ul class="submenu">
+                        <li class="menu--item">
+                            <a class="menu--link" href="login.html">Iniciar Sesión</a>
+                        </li>
+                        <li class="menu--item">
+                            <a class="menu--link" href="cuenta.html">Crear Cuenta</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu--item">
+                    <a class="menu--link" href="publicar.html">Publicar</a>
+                </li>
+                <li class="menu--item contenedor-menu">
+                    <a class="menu--link submenu-btn" href="#">Catalago
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="ocultar icon icon-tabler icon-tabler-chevron-down" width="30" height="30"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <polyline points="6 9 12 15 18 9" />
+                        </svg>
+                    </a>
+                    <!-- usamos un submenu para las partes desplegables -->
+                    <ul class="submenu">
+                        <li class="menu--item">
+                            <a class="menu--link" href="venta.html">Venta</a>
+                        </li>
+                        <li class="menu--item">
+                            <a class="menu--link" href="renta.html">Renta</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu--item">
+                    <a class="menu--link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="menu--item">
+                    <a class="menu--link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="menu--item">
+                    <a class="menu--link" href="dudas.html">Dudas</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <!-- dudas NUEVO-->
+    <main class="contenedor">
+        <h1 class="dudas-title">preguntas frecuentes</h1>
+        <div class="dudas-container">
+            <div class="valores sombra">
+                <img src="img/casa.png" alt="seguridad" class="icono-valores">
+                <h3>¿es una pagina confiable?</h3>
+                <p>
+                    si somos confiables ya que somos la unica pagina en la localidad llevando acabo tu inmobiliaria a
+                    nivel nacional, ayudando a tener una mejor organizacion y facilidad a tu negocio.
+                </p>
+            </div>
+            <div class="valores sombra">
+                <img src="img/dinero.png" alt="precio" class="icono-valores">
+                <h3>¿cuanto es el costo?</h3>
+                <p>
+                    se lleva a cabo atravez de su contrato sobre que es lo que subira a la pagina con el objetivo de
+                    beneficio a ambas cualidades sobre el negocio.
+                </p>
+            </div>
+            <div class="valores sombra">
+                <img src="img/subir.png" alt="tiempo" class="icono-valores">
+                <h3>¿como subir mi informacion?</h3>
+                <p>
+                    puedes llegar a subir tu informacion en nuestro menu en el apartado de publicar, llenando cada una
+                    de las opciones correspondientes
+                </p>
+            </div>
+            <div class="valores sombra">
+                <img src="img/telefono.png" alt="seguridad" class="icono-valores">
+                <h3>como puedo contactarme?</h3>
+                <p>
+                    puedes contactarnos en nuestro menu principal en el apartado de contacto, ingresando tus datos
+                    correspondientes y nosotros recibiremos tu mensaje para informarte
+                </p>
+            </div>
+            <div class="valores sombra">
+                <img src="img/cuantas.png" alt="precio" class="icono-valores">
+                <h3>¿cuantas inmobiliarias permite?</h3>
+                <p>
+                    la pagina se dispone a la capacidad requerida que tu elijas para poder tener acuerdos requeridos en
+                    compra y venta del sitio
+                </p>
+            </div>
+            <div class="valores sombra">
+                <img src="img/disponible.png" alt="tiempo" class="icono-valores">
+                <h3>¿como saber las viviendas disponibles?</h3>
+                <p>
+                    puedes buscar en nuestro menu principal en el apartado de catalogo y ahi se dispone de ventas y
+                    rentas de inmobiliarias, cada vivienda que se encuentre en el apartado estara disponible y las que
+                    ya esten en ocupacion ya no apareceran en nuestra pagina.
+                </p>
+            </div>
+            <div class="valores sombra">
+                <img src="img/robo.png" alt="seguridad" class="icono-valores">
+                <h3>¿como evitar fraude?</h3>
+                <p>
+                    debes seguir algunas precauciones a seguir para no ceder ante fraudes inmobiliarios por internet
+                    como:
+                    Evita tratos con quien no puedas contactar fácilmente, que diga que no está en tu país y no
+                    disponible para encontrarse en persona.
+                </p>
+            </div>
+            <div class="valores sombra">
+                <img src="img/fecha.png" alt="precio" class="icono-valores">
+                <h3>¿Fecha de publicación en los avisos?</h3>
+                <p>
+                    La fecha de publicación le informara a los posibles interesados o futuros propietarios hace cuanto
+                    esta disponible la propiedad en el sitio web.
+                </p>
+            </div>
+            <div class="valores sombra">
+                <img src="img/favoritos.png" alt="tiempo" class="icono-valores">
+                <h3>¿como tener a la mano las propiedades de preferencia?</h3>
+                <p>
+                    el sitio cuenta con un apartado de favoritos para que los clientes cuenten con la facilidad de tener
+                    al alcance las propiedades de mayor gusto.
+                </p>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <p>Bienes<span>Raices</span>Tux Todos los Derechos Reservados &copy;</p>
+    </footer>
+
+    <!-- mandamos a llmar js -->
+    <script src=" js/script.js"></script>
+</body>
+
+</html>
