@@ -518,7 +518,7 @@ header {
 }
 
 .titulo-anuncio {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .contenedor-anuncio .img-anuncio {
@@ -527,13 +527,13 @@ header {
 }
 
 .contenedor-anuncio .info-anuncio h3 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 1.5rem;
 }
 
 .contenedor-anuncio .info-anuncio .precio-anuncio {
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
 
 .contenedor-anuncio .info-anuncio .iconos-caracteristicas {
