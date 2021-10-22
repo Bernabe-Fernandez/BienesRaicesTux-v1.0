@@ -16,6 +16,7 @@
   --black-alpha-color: rgba(0, 0, 0, 0.5);
   --font: "Krub", sans-serif;
   --max-width: 120rem;
+  --buttom-color: #fffb85;
 }
 
 /***** Espacio de Reseteo *****/
@@ -79,9 +80,34 @@ a {
 .btn-azul-block:hover {
   background-color: var(--second-alpha-color);
 }
+
+/* diseño del boton del formulario, esta parte viene adaptada del boton-azul que ya estaba creado*/
+.boton-login {
+  background-color: var(--first-color);
+  color: var(--black-color);
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  text-align: center;
+  margin-top: 2rem;
+  display: inline-block;
+  border: none;
+  width: 50%;
+}
+/*** Boton login hover***/
+.boton-login:hover {
+  cursor: pointer;
+  color: var(--white-color);
+}
+/*** Boton login a la izquierda ***/
+.boton-login-rigth {
+  text-align: right;
+  margin: 1rem;
+}
+
 /**** Boton amarillo ***/
 .boton-amarillo {
-  background-color: var(--second-color);
+  background-color: var(--first-color);
   color: var(--white-color);
   font-weight: bold;
   text-decoration: none;
@@ -95,7 +121,7 @@ a {
 /*** Boton amarillo hover***/
 .boton-amarillo:hover {
   cursor: pointer;
-  background-color: var(--second-alpha-color);
+  background-color: var(--first-alpha-color);
 }
 /*** Boton amarillo a la izquierda ***/
 .boton-amarillo-rigth {
@@ -685,5 +711,64 @@ footer span {
   footer {
     height: 5rem;
     margin: auto;
+  }
+}
+
+/**** login Cesar paolo galicia morales ****/
+
+/*diseño de la estrcutura del formulario tanto dimenciones como color*/
+.form {
+  background: var(--gray-light-color);
+  text-align: center;
+  padding: 0.5rem 0.5rem;
+  margin: 2rem 0.5rem;
+  box-shadow: 0 0 6px 0 var(--text-color);
+  border-radius: 10px;
+  width: 100%;
+}
+
+.form .grupo {
+  position: relative;
+  margin: 45px;
+}
+/** diseño de los input's y animaciones*/
+.form .grupo input {
+  background: none;
+  color: #ccc;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid var(--black-alpha-color);
+}
+
+.form .grupo input:focus {
+  outline: none;
+  color: var(--gray-dark-color);
+}
+/* animacion de los input's movimiento del texto*/
+.form .grupo label {
+  color: var(--black-alpha-color);
+  font-size: 16px;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  transition: 0.5s ease-in-out all;
+  pointer-events: none;
+}
+/* diseño de las animaciones y instrucccion para que se mantenga cuando se cumplen las especificaciones del input y color negro que indica seleccionado o lleno*/
+.form .grupo input:focus ~ label,
+.form .grupo input:valid ~ label {
+  top: -14px;
+  color: var(--black-alpha-color);
+}
+
+/*media queries correspondientes al login tomando de referencia el diseño de desktop y adaptado a moviles*/
+@media (min-width: 1024px) {
+  .form {
+    width: 40%;
+    align-content: center;
+    margin: 2rem auto;
   }
 }

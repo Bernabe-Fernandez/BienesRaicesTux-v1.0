@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- mandamos a llamar un API de google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <!-- mandamos a llamar la hoja de estilos y la hoja de normalize -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <title>BienesRaicesTux</title>
@@ -37,7 +39,7 @@
         <!-- botones para activar o desactivar el menu -->
         <div class="botones ocultar">
             <!-- estrella para favoritos -->
-            <a href="favoritos.html">
+            <a href="favorito.html">
                 <svg class="favorito" xmlns=" http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <path
                         d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
@@ -121,47 +123,34 @@
             </ul>
         </nav>
     </section>
-    <!-- contactanos -->
-    <main class="contenedor contacto">
-        <h1>publicar</h1>
-        <h2>Llene el formulario para Publicar</h2>
-        <!-- formulario de contacto -->
-        <form action="" class="formulario">
-            <!-- informacion personal -->
-            <fieldset>
-                <legend>Información de la Propiedad</legend>
-                <label for="estado">estado</label>
-                <input id="estado" type="text" placeholder="el estado">
-                <label for="tipo de inmueble">tipo de inmueble</label>
-                <input id="tipoinmueble" type="text" placeholder="El tipo de inmueble" required="">
-                <label for="precio">Precio</label>
-                <input id="precio" type="number" placeholder="precio" required>
-                <label for="direccionpub">direccion</label>
-                <input id="direccionpub" type="text" placeholder="direccion" required>
+    <!-- sobre-nosotros -->
+    <h1>Inicia Sesión</h1>
+    <!-- Formulario de inicio de sesion  con tres input correspondientes a los datos del login -->
+    <main class="container">
+        <form action="" class="form">
+            <div class="forma">
+                <div class="grupo">
+                    <input type="text" name="" id="name" required>
+                    <spam class="barra"></spam>
+                    <label for="">Nombre</label>
+                </div>
 
-                <label for="metrostotales">metros totales</label>
-                <input id="metrostotales" type="number" placeholder="metros totales" required>
+                <div class="grupo">
+                    <input type="email" name="" id="name" required>
+                    <spam class="barra"></spam>
+                    <label for="">Email</label>
+                </div>
 
-                <label for="metroscontruidos">metros construidos</label>
-                <input id="metroscontruidos" type="number" placeholder="metros construidos" required>
+                <div class="grupo">
+                    <input type="password" name="" id="name" required>
+                    <spam class="barra"></spam>
+                    <label for="">password</label>
+                </div>
 
-                <label for="nhabitacion">numero de habitaciones</label>
-                <input id="nhabitacion" type="number" placeholder=" numero de habitaciones" required>
-
-                <label for="nbaños">numero de baños</label>
-                <input id="nbaños" type="number" placeholder=" numero de baños" required>
-
-                <label for="ngaraje">numero de garajes</label>
-                <input id="ngaraje" type="number" placeholder=" numero de garajes" required>
-
-                <label for="antiguedad">antiguedad</label>
-                <input id="antiguedad" type="number" placeholder="antiguedad" required>
-                <label for="subirfile">subir imagen</label>
-                <input type="file" name="" value="">
-            </fieldset>
-            <!-- botton amarillo -->
-            <div class="boton-amarillo-rigth">
-                <input type="submit" value="Enviar" class="boton-amarillo">
+                <!-- Boton de el formulario del login  -->
+                <div class="boton-login-rigth">
+                    <input type="submit" value="Enviar" class="boton-login">
+                </div>
             </div>
         </form>
     </main>
