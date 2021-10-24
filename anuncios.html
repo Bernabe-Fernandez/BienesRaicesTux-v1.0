@@ -123,49 +123,106 @@
             </ul>
         </nav>
     </section>
+
     <main class="contenedor">
-        <h1 class="titulo-anuncio">Casa en Venta</h1>
-        <!-- tarjeta de la casa publicada -->
-        <div class="anuncio contenedor-anuncio">
-            <img src="img/destacada.jpg" alt="descatada 1" class="img-anuncio">
-            <div class="info-anuncio">
-                <h3>Bonita Casa en Venta Fracc. Potinaspak</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, ipsam! Maxime, provident optio quam
-                    nulla nemo
-                    corrupti ducimus sapiente reprehenderit fugit, ipsum magnam temporibus ex aspernatur odit saepe in
-                    eum, Lorem ipsum
-                    dolor sit, amet consectetur adipisicing elit. Soluta atque natus deleniti aliquam corrupti eos id
-                    earum? Voluptates
-                    voluptate molestias nobis et tempore numquam odio, culpa inventore, ullam perspiciatis optio. Lorem
-                    ipsum dolor sit
-                    amet consectetur adipisicing elit. Eligendi porro optio nulla voluptate sint est non, quas, nisi,
-                    consequuntur sequi
-                    blanditiis.
-                </p>
-                <p class="precio-anuncio">
-                    $3,000,000.00
-                </p>
-                <ul class="iconos-caracteristicas">
-                    <li>
-                        <img src="img/icono_wc.svg" alt="icono-wc" class="img-caracteristicas">
-                        <p>3</p>
-                    </li>
-                    <li>
-                        <img src="img/icono_estacionamiento.svg" alt="icono-estacionamiento"
-                            class="img-caracteristicas">
-                        <p>3</p>
-                    </li>
-                    <li>
-                        <img src="img/icono_dormitorio.svg" alt="icono-dormitorio" class="img-caracteristicas">
-                        <p>3</p>
-                    </li>
-                </ul>
-                <a href="contacto.html" class="btn-azul-block">
-                    Contactar
-                </a>
+        <section>
+            <h1 class="titulo-anuncio">Casa en Venta</h1>
+            <!-- tarjeta de la casa publicada -->
+            <div class="anuncio-page sombra contenedor-anuncio">
+                <img src="img/destacada.jpg" alt="descatada 1" class="img-anuncio">
+                <div class="info-anuncio">
+                    <h3>Bonita Casa en Venta Fracc. Potinaspak</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, ipsam! Maxime, provident optio
+                        quam
+                        nulla nemo
+                        corrupti ducimus sapiente reprehenderit fugit, ipsum magnam temporibus ex aspernatur odit saepe
+                        in
+                        eum, Lorem ipsum
+                        dolor sit, amet consectetur adipisicing elit. Soluta atque natus deleniti aliquam corrupti eos
+                        id
+                        earum? Voluptates
+                        voluptate molestias nobis et tempore numquam odio, culpa inventore, ullam perspiciatis optio.
+                        Lorem
+                        ipsum dolor sit
+                        amet consectetur adipisicing elit. Eligendi porro optio nulla voluptate sint est non, quas,
+                        nisi,
+                        consequuntur sequi
+                        blanditiis.
+                    </p>
+                    <p class="precio-anuncio">
+                        $3,000,000.00
+                    </p>
+                    <ul class="iconos-caracteristicas">
+                        <li>
+                            <img src="img/icono_wc.svg" alt="icono-wc" class="img-caracteristicas">
+                            <p>3</p>
+                        </li>
+                        <li>
+                            <img src="img/icono_estacionamiento.svg" alt="icono-estacionamiento"
+                                class="img-caracteristicas">
+                            <p>3</p>
+                        </li>
+                        <li>
+                            <img src="img/icono_dormitorio.svg" alt="icono-dormitorio" class="img-caracteristicas">
+                            <p>3</p>
+                        </li>
+                    </ul>
+                    <div class="boton-amarillo-center">
+                        <a href="#contacto" class="boton-amarillo">
+                            Contactar
+                        </a>
+                    </div>
+                </div>
             </div>
+        </section>
+        <!-- hacemos un modal para el formulario de contacto desde la pagina de los anuncios -->
+        <article class="modal" id="contacto">
+            <div class="modal-contenido">
+                <a href="#close" class="modal-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path
+                            d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z" />
+                    </svg>
+                </a>
+                <article class="formulario-modal">
+                    <form action="" class="form">
+                        <div class="forma">
+                            <div class="grupo">
+                                <input type="text" name="" id="name" required>
+                                <spam class="barra"></spam>
+                                <label for="">Nombre De Usuario</label>
+                            </div>
+                            <div class="grupo">
+                                <input type="email" name="" id="email" required>
+                                <spam class="barra"></spam>
+                                <label for="">Email</label>
+                            </div>
+                            <div class="grupo">
+                                <input type="tel" name="" id="telefono" required>
+                                <spam class="barra"></spam>
+                                <label for="">Telefono</label>
+                            </div>
+                            <div class="grupo">
+                                <label for="">Mensaje</label>
+                                <br>
+                                <textarea name="" id="" cols="30"
+                                    rows="5">Hola, me interesa este inmueble que vi en BienesRaicesTux y quiero que me contacten. Gracias.</textarea>
+                            </div>
+
+                            <!-- Boton de el formulario del contacto  -->
+                            <div class="boton-login-rigth">
+                                <input type="submit" value="Enviar" class="boton-login">
+                            </div>
+                        </div>
+                    </form>
+                </article>
+            </div>
+        </article>
     </main>
+
+
+
     <!-- footer -->
     <footer>
         <p>Bienes<span>Raices</span>Tux Todos los Derechos Reservados &copy;</p>

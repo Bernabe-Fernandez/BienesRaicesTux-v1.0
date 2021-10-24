@@ -44,10 +44,10 @@ body {
 
 /***Configuramos los titulos ***/
 h1 {
-  font-size: 4.8rem;
+  font-size: 4rem;
 }
 h2 {
-  font-size: 3.8rem;
+  font-size: 3.2rem;
 }
 h3 {
   font-size: 2.8rem;
@@ -92,7 +92,7 @@ a {
   margin-top: 2rem;
   display: inline-block;
   border: none;
-  width: 50%;
+  width: 80%;
 }
 /*** Boton login hover***/
 .boton-login:hover {
@@ -116,8 +116,22 @@ a {
   margin-top: 2rem;
   display: inline-block;
   border: none;
-  width: 30%;
+  width: 80%;
+  pointer-events: auto;
 }
+
+@media (min-width: 768px) {
+  .boton-amarillo {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .boton-amarillo {
+    width: 30%;
+  }
+}
+
 /*** Boton amarillo hover***/
 .boton-amarillo:hover {
   cursor: pointer;
@@ -126,6 +140,10 @@ a {
 /*** Boton amarillo a la izquierda ***/
 .boton-amarillo-rigth {
   text-align: right;
+}
+
+.boton-amarillo-center {
+  text-align: center;
 }
 
 /*** estilos de boton ****/
@@ -155,6 +173,44 @@ a {
   padding: 1rem;
   border-radius: 1rem;
   margin: 1rem;
+}
+
+/***** Ventana Modal ***/
+.modal {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black-alpha-color);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s;
+}
+
+.modal-contenido {
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.modal-close svg {
+  width: 3rem;
+  height: 3rem;
+  fill: var(--first-color);
+}
+
+.modal#contacto:target {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /***** Utilidades ******/
@@ -210,7 +266,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 100vh;
+  height: 80vh;
 }
 
 .head {
@@ -546,6 +602,14 @@ header {
   padding: 1rem 1.5rem;
   margin: 1rem auto;
 }
+
+.anuncio-page {
+  width: 80%;
+  padding: 1rem 1.5rem;
+  margin: 0 auto 3rem auto;
+  background-color: var(--gray-color);
+}
+
 .img-anuncio {
   width: 100%;
   height: auto;
@@ -720,21 +784,32 @@ footer span {
 .form {
   background: var(--gray-light-color);
   text-align: center;
-  padding: 0.5rem 0.5rem;
-  margin: 2rem 0.5rem;
+  padding: 0.5rem;
+  margin: 2rem auto;
   box-shadow: 0 0 6px 0 var(--text-color);
   border-radius: 10px;
-  width: 100%;
+  width: 80%;
 }
 
 .form .grupo {
   position: relative;
-  margin: 45px;
+  margin: 30px;
 }
 /** diseño de los input's y animaciones*/
 .form .grupo input {
   background: none;
   color: #ccc;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid var(--black-alpha-color);
+}
+
+.form .grupo textarea {
+  background: none;
+  color: var(--gray-dark-color);
   font-size: 18px;
   padding: 10px 10px 10px 5px;
   display: block;
@@ -768,6 +843,12 @@ footer span {
 @media (min-width: 1024px) {
   .form {
     width: 40%;
+    align-content: center;
+    margin: 2rem auto;
+  }
+
+  .formulario-modal .form {
+    width: 100%;
     align-content: center;
     margin: 2rem auto;
   }
