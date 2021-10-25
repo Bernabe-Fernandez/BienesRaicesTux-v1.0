@@ -778,6 +778,16 @@ footer span {
   }
 }
 
+.contenedor-password {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icono-password {
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+}
+
 /**** login Cesar paolo galicia morales ****/
 
 /*diseño de la estrcutura del formulario tanto dimenciones como color*/
