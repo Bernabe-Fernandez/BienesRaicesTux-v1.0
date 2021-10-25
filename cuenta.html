@@ -124,47 +124,63 @@
     </section>
     <!-- contactanos -->
     <main class="contenedor contacto">
-        <h1>registro</h1>
+        <h1>Registro</h1>
         <h2>Llene el formulario de registro</h2>
         <!-- formulario de contacto -->
         <form action="" class="formulario">
             <!-- informacion personal -->
             <fieldset>
+                <legend>Información Personal</legend>
                 <label for="ocupacion">comprador o vendedor</label>
                 <select id="ocupacion" onChange="tipochange(this)">
                     <option value disabled selected>--- Seleccione ---</option>
                     <option value="1" id="uno" onclick="mostrar();">comprador</option>
                     <option value="2" id="dos">vendedor</option>
                 </select>
-                <legend>Información Personal</legend>
+                <label for="nombre">Nombre De Usuario</label>
+                <input id="nombre" type="text" placeholder="Ej. Juan19" required>
+
                 <label for="nombre">Nombre</label>
-                <input id="nombre" type="text" placeholder="Tu Nombre">
+                <input id="nombre" type="text" placeholder="Tu Nombre" required>
+
                 <label for="apellidoPaterno">apellido paterno</label>
-                <input id="apellidoPaterno" type="text" placeholder="Tu apellido paterno">
+                <input id="apellidoPaterno" type="text" placeholder="Tu apellido paterno" required>
+
                 <label for="<apellido>materno</apellido>materno">apellido materno</label>
-                <input id="apellidoMaterno" type="text" placeholder="Tu apellido materno">
+                <input id="apellidoMaterno" type="text" placeholder="Tu apellido materno" required>
+
                 <label for="correo">E-mail</label>
-                <input id="correo" type="email" placeholder="Tu Correo Electronico">
+                <input id="correo" type="email" placeholder="Tu Correo Electronico" required>
+
                 <!-- password -->
                 <label for="password">contraseña</label>
-                <input id="password" type="password" name="Tu contraseña" placeholder="Tu Contraseña">
+                <div class="flex">
+                    <input id="password" type="password" name="Tu contraseña" placeholder="Tu Contraseña" required>
+                    <p>hola</p>
+                </div>
+
                 <!-- boton de mostrar contraseña-->
+
+
                 <label for="telefono">telefono</label>
-                <input id="numerotelefonico" type="tel" placeholder="tu telefono">
+                <input id="numerotelefonico" type="tel" placeholder="tu telefono" required>
+
                 <label for="codigopostal">codigo postal</label>
-                <input id="codigopostal" type="number" placeholder="Tu codigo postal">
+                <input id="codigopostal" type="number" placeholder="Tu codigo postal" required>
 
                 <!-- vendedor -->
                 <label for="RFC" id="RFClabel">RFC</label>
-                <input id="RFCvent" type="text" placeholder="Tu RFC">
+                <input id="RFCvent" type="text" placeholder="Tu RFC" required>
+
                 <label for="celular" id="celebal">cel</label>
-                <input id="celvent" type="number" placeholder="Tu celular">
+                <input id="celvent" type="number" placeholder="Tu celular" required>
+
                 <label for="direccion" id="direccionlebal">direccion</label>
-                <input id="direccionvent" type="text" placeholder="tu direccion">
+                <input id="direccionvent" type="text" placeholder="tu direccion" required>
                 <!-- fin de vendedores -->
+
             </fieldset>
-            <!-- informacion sobre propiedad -->
-            <!-- botton azul -->
+            <!-- botton amarillo -->
             <div class="boton-amarillo-rigth">
                 <input type="submit" value="Enviar" class="boton-amarillo">
             </div>
@@ -175,7 +191,7 @@
         <p>Bienes<span>Raices</span>Tux Todos los Derechos Reservados &copy;</p>
     </footer>
 
-    <!-- mandamos a llmar js -->
+    <!-- mandamos a llamar js -->
     <script src=" js/script.js"></script>
 </body>
 

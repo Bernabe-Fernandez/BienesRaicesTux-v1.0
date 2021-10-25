@@ -123,42 +123,51 @@
     </section>
     <!-- contactanos -->
     <main class="contenedor contacto">
-        <h1>publicar</h1>
+        <h1>Publicar</h1>
         <h2>Llene el formulario para Publicar</h2>
         <!-- formulario de contacto -->
         <form action="" class="formulario">
-            <!-- informacion personal -->
+            <!-- informacion propiedad -->
             <fieldset>
                 <legend>Información de la Propiedad</legend>
+
                 <label for="estado">estado</label>
-                <input id="estado" type="text" placeholder="el estado">
+                <input id="estado" type="text" placeholder="Estado" required>
+
                 <label for="tipo de inmueble">tipo de inmueble</label>
-                <input id="tipoinmueble" type="text" placeholder="El tipo de inmueble" required="">
+                <input id="tipoinmueble" type="text" placeholder="Tipo de inmueble" required>
+
                 <label for="precio">Precio</label>
-                <input id="precio" type="number" placeholder="precio" required>
+                <input id="precio" type="number" placeholder="Precio" required>
+
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion"></textarea>
+
                 <label for="direccionpub">direccion</label>
-                <input id="direccionpub" type="text" placeholder="direccion" required>
+                <input id="direccionpub" type="text" placeholder="Direccion" required>
 
                 <label for="metrostotales">metros totales</label>
-                <input id="metrostotales" type="number" placeholder="metros totales" required>
+                <input id="metrostotales" type="number" placeholder="Ej. 100" required>
 
                 <label for="metroscontruidos">metros construidos</label>
-                <input id="metroscontruidos" type="number" placeholder="metros construidos" required>
+                <input id="metroscontruidos" type="number" placeholder="Ej. 100" required>
 
                 <label for="nhabitacion">numero de habitaciones</label>
-                <input id="nhabitacion" type="number" placeholder=" numero de habitaciones" required>
+                <input id="nhabitacion" type="number" placeholder=" Ej. 2" required>
 
                 <label for="nbaños">numero de baños</label>
-                <input id="nbaños" type="number" placeholder=" numero de baños" required>
+                <input id="nbaños" type="number" placeholder="Ej. 1" required>
 
                 <label for="ngaraje">numero de garajes</label>
-                <input id="ngaraje" type="number" placeholder=" numero de garajes" required>
+                <input id="ngaraje" type="number" placeholder="Ej. 1" required>
 
                 <label for="antiguedad">antiguedad</label>
                 <input id="antiguedad" type="number" placeholder="antiguedad" required>
-                <label for="subirfile">subir imagen</label>
+
+                <label for="subirfile">Imagen</label>
                 <input type="file" name="" value="">
             </fieldset>
+
             <!-- botton amarillo -->
             <div class="boton-amarillo-rigth">
                 <input type="submit" value="Enviar" class="boton-amarillo">
