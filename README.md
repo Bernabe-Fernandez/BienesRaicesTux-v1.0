@@ -2,6 +2,6 @@
 
 Proyecto 2 de la materia Programación de Aplicaciones Web
 Universidad Autonoma de Chiapas
-@author Bernabe Fernandez
+@author Equipo 1 PDAW
 
 ## Link Proyecto
